@@ -37,8 +37,8 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="bg-[#286f6b] w-full top-0 fixed z-50">
-      <div className="md:w-[1700px] w-[500px] sticky mx-auto text-xl">
+    <div className="bg-[#286f6b] w-full top-0  fixed z-50">
+      <div className="md:w-full   md:text-xl">
         <nav className="flex justify-between md:p-8 p-2 items-center">
           <div className="flex items-center md:space-x-8 space-x-4">
             <Link to="/home" className="hover:text-[#fcdc66]">
@@ -53,7 +53,7 @@ export default function Header() {
             <div className="relative">
               <p
                 onClick={() => setIsOpen((prev) => !prev)}
-                className="font-semibold flex w-full rounded-xl text-center p-1 text-white text-xl cursor-pointer"
+                className="font-semibold flex w-full rounded-xl text-center p-1 text-white  md:text-xl cursor-pointer"
               >
                 Courses {isOpen ? <FaAngleUp className="h-6 ml-4" /> : <FaAngleDown className="h-6 ml-4" />}
               </p>
@@ -76,11 +76,11 @@ export default function Header() {
               )}
             </div>
             <div>
-              <p className="font-semibold flex w-full rounded-xl text-center p-1 text-white text-xl cursor-pointer">
-                <Link to="/about">About us</Link>
+              <p className="font-semibold flex w-full rounded-xl text-center p-1 text-white md:text-xl cursor-pointer">
+                <Link to="/about">About </Link>
               </p>
             </div>
-            <div className="hidden sm:block">
+            <div className="hidden sm:block md:block">
               <Search />
             </div>
           
